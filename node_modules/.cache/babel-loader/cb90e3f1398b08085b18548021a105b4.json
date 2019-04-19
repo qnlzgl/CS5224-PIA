@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default as IntlService } from './services/intl-service';\nexport { default as TemplateService } from './services/template-service';","map":null,"metadata":{},"sourceType":"module"}
