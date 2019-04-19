@@ -208,17 +208,9 @@ p {
 
 .card-raw-text:hover {
   transition: all 0.3s;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #000000,
-    #434343
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #000000,
-    #434343
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/**/
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
 .card-facebook:hover {
   transition: all 0.3s;
@@ -591,8 +583,14 @@ textarea {
 }
 
 .footer {
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  position: fixed;
+  /*background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);*/
+  /*background: linear-gradient(90deg, #d53369 0%, #daae51 100%);*/
+  background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+  /*background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);*/
+  /*background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);*/
+/*  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+*/  position: fixed;
   bottom: 0;
   padding: 1rem 0;
   width: 100%;

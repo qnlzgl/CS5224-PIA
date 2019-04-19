@@ -18,7 +18,7 @@ class Header extends Component {
             <small>
               Powered by <a href="https://www.ibm.com/watson">IBM Watson</a>
               {""} / Developed by {""}
-              <a href="https://www.comp.nus.edu.sg/~teoym/cs5224-19//schedule.html">CS5224 Cloud Computing Project Team PIA</a>
+              <a href="https://github.com/qnlzgl/CS5224-PIA">CS5224 Cloud Computing Project Team PIA</a>
             </small>
           </p>
         </Container>

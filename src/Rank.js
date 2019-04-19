@@ -4,6 +4,8 @@ import ReactTable from 'react-table'
 import "react-table/react-table.css"
 import { Progress, Row, Col } from 'reactstrap';
 import { ExcelExport, ExcelExportColumn } from '@progress/kendo-react-excel-export';
+import MainMenu from "./components/MainMenu";
+
 
 
 class Rank extends Component {
@@ -105,7 +107,11 @@ class Rank extends Component {
 		var temp_candidate_data = []
 		var curr_candidate;
 		for (var i = 0; i < this.state.candidate_data.length; i++) {
-			let score = Math.pow(this.state.ideal_openness/5 - this.state.candidate_data[i].openness, 2)
+			let score = Math.pow(this.state.ideal_openness/5 - this.state.candidate_data[i].openness, 2) + 
+						Math.pow(this.state.ideal_conscientiousness/5 - this.state.candidate_data[i].conscientiousness, 2) +
+						Math.pow(this.state.ideal_extraversion/5 - this.state.candidate_data[i].extraversion, 2) + 
+						Math.pow(this.state.ideal_agreeableness/5 - this.state.candidate_data[i].agreeableness, 2) + 
+						Math.pow(this.state.ideal_neuroticism/5 - this.state.candidate_data[i].neuroticism, 2)
 			curr_candidate = this.state.candidate_data[i]
 			curr_candidate["score"] = Math.round(score * 100) / 100
 			temp_candidate_data.push(curr_candidate)
@@ -147,6 +153,7 @@ class Rank extends Component {
 	render() {
 		return (
 		  <div>
+		  <MainMenu />
 		  	<Container className="choose-file">
 				<Form onSubmit={this.handleSubmit}>
 				    <FormGroup>

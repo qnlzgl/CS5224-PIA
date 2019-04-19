@@ -11,7 +11,7 @@ class Footer extends Component {
             href="https://console.bluemix.net/docs/services/personality-insights/science.html#science"
             title="The science behind Personality Insights"
           >
-            The science behind Personality Insights
+            Wanna learn more about theoretical basis of our App ? Here you go !
           </a>
         </Container>
       </footer>
