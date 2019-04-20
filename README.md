@@ -7,6 +7,8 @@ Source Code on Github: https://github.com/qnlzgl/CS5224-PIA
 
 Demo on AWS S3 Bucket: http://cs5224-personal-insight-bucket.s3-website.ap-southeast-1.amazonaws.com
 
+Please refer to our Project Report `Project-Report.pdf` for more details (Business Model, Economic Factor etc.)
+
 ## Group Members
 HAN, BING       A0186003N
 
@@ -42,7 +44,7 @@ Please open `http://localhost:3000` to see the results.
 All app code is in `src/`. The app is written in [react](https://facebook.github.io/react/)
 and during development time, simply run `$ npm start` to start a dev server.
 
-## Build frontend app
+## Build Frontend app
 
 Make sure to build the app into production before deployment. Optimised HTML, CSS, Javascript will be generated in `build` folder
 
